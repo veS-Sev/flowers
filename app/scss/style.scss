@@ -1,8 +1,415 @@
-html{
-box-sizing: border-box;
+@import "vars";
+@import "global";
+@import "fonts";
+
+// header start
+.header {
+    height: 130px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    a {
+        color: #000;
+        font-size: 14px;
+    }
+    &__nav-left {
+        li {
+            display: inline;
+        }
+    }
+    &__nav-right {
+        li {
+            display: inline;
+        }
+    }
+    &__logo-box {
+        display: flex;
+        flex-direction: column;
+    }
 }
-*,
-*::before,
-*::after{
-      box-sizing: inherit;
-  }
+
+// header end
+// slider start
+
+.slider {
+    &__wrapper {
+        width: 100%;
+        min-height: 630px;
+        position: relative;
+        background-color: #fff;
+    }
+    &__inner {
+        max-width: 1920px;
+        width: 100%;
+        min-height: 630px;
+        .slider__item {
+            max-width: 1920px;
+            width: 100%;
+            min-height: 630px;
+        }
+        .slider__image {
+            max-width: 1920px;
+            width: 100%;
+            height: 630px;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    &__arrow-left,
+    &__arrow-right {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: rgba(250, 250, 250, 0.2);
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .icon-chevron-left,
+    .icon-chevron-right {
+        color: #fff;
+        font-size: 22px;
+        font-family: "icomoon" !important;
+    }
+    &__arrow-left {
+        left: 40px;
+    }
+    &__arrow-right {
+        right: 40px;
+    }
+    .slider__title-box {
+        position: absolute;
+        top: 25%;
+        text-align: center;
+        max-width: 850px;
+        width: 100%;
+        z-index: 10;
+        color: #fff;
+        overflow: hidden;
+        height: 300px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        .slider__title {
+            font-family: "Playfair Display", serif;
+            font-size: 88px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .slider__subtitle {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+        .slider__btn {
+            background-color: transparent;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #fff;
+            width: 211px;
+            height: 55px;
+            border: 1px solid #fff;
+            padding: 13px 10px;
+            border-radius: 27px;
+        }
+    }
+}
+
+// slider end
+
+// occasions start
+.occasions {
+    min-height: 450px;
+    &__wrapper {
+        margin-top: -35px;
+        position: absolute;
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 365px;
+        height: 260px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: 24px;
+        color: #fff;
+        padding: 90px 20px;
+        position: relative;
+        box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.17);
+        & + & {
+            margin-left: 35px;
+        }
+    }
+    .occasions-1 {
+        background-image: url(../images/occasions/occasion-5.jpg);
+    }
+    .occasions-2 {
+        background-image: url(../images/occasions/occasion-6.jpg);
+    }
+    .occasions-3 {
+        background-image: url(../images/occasions/occasion-2.jpg);
+    }
+    &__name {
+        max-width: 125px;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 28px;
+        text-transform: uppercase;
+    }
+    &__item-content {
+        position: absolute;
+        opacity: 0;
+        background-color: #1b3a3f;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 40px 30px 30px;
+        left: 0;
+        top: 0;
+        width: 365px;
+        height: 260px;
+
+        &:hover {
+            opacity: 1;
+        }
+        .occasions__item-title {
+            font-weight: 700;
+            color: #66cc99;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .occasions__item-text {
+            color: #666666;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .occasions__item-btn {
+            font-weight: 700;
+            background-color: rgb(153, 204, 102);
+            border-radius: 4px;
+            width: 114px;
+            height: 40px;
+            color: #fff;
+            padding: 12px 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+
+// occasions end
+// category start
+.category {
+    &__wrapper {
+        background-color: #f3f3f3;
+        min-height: 990px;
+        padding-top: 150px;
+    }
+    .category__wrapper::before {
+        background-color: #fff;
+        top: 0;
+        content: "";
+        display: block;
+        height: 140px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transform: skewY(4.1deg);
+        transform-origin: 100%;
+    }
+    .category__wrapper::after {
+        background: #fff;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 70px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transform: skewY(-2.1deg);
+        transform-origin: 100%;
+        z-index: 1;
+    }
+    &__title {
+        max-width: 240px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        line-height: 40px;
+    }
+    &__box {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+    &__image {
+        max-width: 387px;
+        width: 100%;
+        height: 557px;
+        background-image: url(../images/category/category_image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: right;
+    }
+    &__item {
+        width: calc(50%);
+        padding: 50px;
+    }
+    .category__item-title {
+        text-align: right;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color: #000;
+    }
+    .category__item-text {
+        color: #999999;
+        font-size: 14px;
+        overflow: hidden;
+    }
+    &-1,
+    &-3,
+    &-5 {
+        border-right: 1px solid #f2f2f2;
+    }
+    &-1,
+    &-2,
+    &-3,
+    &-4 {
+        border-bottom: 1px solid #f2f2f2;
+    }
+}
+// category end
+// bouquets start
+
+.bouquets {
+    .bouquets__wrapper {
+    }
+    .bouquets__wrapper::after {
+        background: #fff;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 70px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transform: skewY(-2.1deg);
+        transform-origin: 100%;
+        z-index: 1;
+    }
+    .bouquets__title {
+        margin-bottom: 25px;
+    }
+    .bouquets__subtitle {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+    }
+    .bouquets__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+    .bouquets__item {
+        max-width: 368px;
+        min-height: 372px;
+        border: 4px solid transparent;
+        transition: 0.5s;
+        flex-basis: calc(33.33%-30px);
+        margin-bottom: 90px;
+        margin-left: 30px;
+        position: relative;
+    }
+    .bouquets__item::before{
+        content:"SALE";
+        position: absolute;
+        width: 72px;
+        height: 43px;
+        background-color: $coral;
+        color: #fff;
+        top: 10px;
+        left: -13px;
+        padding: 11px 5px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+   
+    .bouquets__item:hover {
+        border: 4px solid #ff3366;
+    }
+    .bouquets__image {
+        width: 366px;
+        height: 260px;
+        background-image: url(../images/bouquets/buiquet-1.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .bouquets__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 23px 30px 34px 30px;
+        background-color: #f7f7f7;
+    }
+
+    .bouquets__info-inner {
+        margin-right: 10px;
+        max-width: 150px;
+        width: 100%;
+    }
+    .bouquets__name {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color:#000;
+    }
+    .bouquets__category {
+        color: #999999;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .bouquets__basket,
+    .bouquets__price {
+        background-color: #fff;
+        width: 51px;
+        height: 51px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .bouquets__price {
+        font-size: 16px;
+        font-weight: 700;
+        color: $coral;
+        padding:15px 4px;
+    }
+    .bouquets__basket {
+        background-image: url(../images/bouquets/bouquet__basket-icon.svg);
+        background-repeat: no-repeat;
+        background-position: 13px 13px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+// bouquets end
+
+// background: linear-gradient(4deg, #fff 150px,transparent 153px, #fff 150px, transparent 153px),linear-gradient(to bottom,#5d617c,#5d617c);
+// ff0066
+// ff3366
