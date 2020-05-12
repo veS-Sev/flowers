@@ -12,6 +12,14 @@ body {
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif; 
 }
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
 h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
@@ -31,8 +39,21 @@ li {
 }
 button{
   padding: 0;
+  border: none;
+  cursor:pointer;
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
 .container__fluid {
   max-width: 1920px;
   width: 100%;
@@ -44,7 +65,7 @@ button{
   padding:0 15px;
   margin: 0 auto;
  }
- .wrapper{
+ .wrap{
   position: relative;
   max-width: inherit;
   width: 100%;
