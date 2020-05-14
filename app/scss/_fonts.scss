@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?zgcbdw');
-  src:  url('../fonts/icomoon.eot?zgcbdw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?zgcbdw') format('truetype'),
-    url('../fonts/icomoon.woff?zgcbdw') format('woff'),
-    url('../fonts/icomoon.svg?zgcbdw#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?hmyx4c');
+  src:  url('../fonts/icomoon.eot?hmyx4c#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hmyx4c') format('truetype'),
+    url('../fonts/icomoon.woff?hmyx4c') format('woff'),
+    url('../fonts/icomoon.svg?hmyx4c#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,4 +30,35 @@
 }
 .icon-chevron-right:before {
   content: "\f054";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
+.icon-facebook:before {
+  content: "\e900";
+  color: #1877f2;
+}
+.icon-instagram:before {
+  content: "\e901";
+  color: #e4405f;
+}
+.icon-odnoklassniki:before {
+  content: "\e902";
+  color: #f4731c;
+}
+.icon-pinterest:before {
+  content: "\e906";
+  color: #bd081c;
+}
+.icon-viber:before {
+  content: "\e903";
+  color: #665cac;
+}
+.icon-vk:before {
+  content: "\e904";
+  color: #4680c2;
+}
+.icon-whatsapp:before {
+  content: "\e905";
+  color: #25d366;
 }
