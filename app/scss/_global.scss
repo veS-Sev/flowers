@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  background-color: #fff;
 }
 *,
 *::before,
@@ -49,8 +50,12 @@ button {
   border: none;
   cursor: pointer;
 }
+input {
+  border: none;
+}
 textarea {
   resize: none;
+  border: none;
 }
 .wrapper {
   display: flex;
@@ -67,6 +72,7 @@ textarea {
   max-width: 1920px;
   width: 100%;
   overflow: hidden;
+  margin: 0 auto;
 }
 .container {
   max-width: 1200px;

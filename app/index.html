@@ -8,7 +8,6 @@
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700|Playfair+Display:400,700,700i|Prata&display=swap&subset=cyrillic"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/65673c82b3/UntitledProject/style-svg.css"> -->
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -19,24 +18,24 @@
       <div class="container">
         <div class="header__wrapper wrap">
           <nav class="header__nav-left">
-            <ul>
-              <li><a href="#">Цветы</a></li>
-              <li><a href="#">Композиции</a></li>
-              <li><a href="#">Растения</a></li>
-              <li><a href="#">Букеты</a></li>
+            <ul class="header__nav-left-list">
+              <li class="header__nav-left-item"><a href="#">Цветы</a></li>
+              <li class="header__nav-left-item"><a href="#">Композиции</a></li>
+              <li class="header__nav-left-item"><a href="#">Растения</a></li>
+              <li class="header__nav-left-item"><a href="#">Букеты</a></li>
             </ul>
           </nav>
           <a class="header__logo">
             <div class="header__logo-box">
-              <div class="header__logo-icon"><img src="images/logo-icon.png" alt=""></div>
+              <div class="header__logo-icon"><img src="images/header__logo-icon.png" alt=""></div>
               <div class="header__logo-name">Soffia</div>
-              <div class="header__logo-subttile">салон</div>
+              <div class="header__logo-subttile">цветы</div>
             </div>
           </a>
           <nav class="header__nav-right">
-            <ul>
-              <li><a href="#">Подарки</a></li>
-              <li><a href="#">Доставка</a></li>
+            <ul class="header__nav-right-list">
+              <li class="header__nav-right-item"><a href="#">Подарки</a></li>
+              <li class="header__nav-right-item"><a href="#">Доставка</a></li>
 
             </ul>
           </nav>
@@ -69,42 +68,18 @@
         </div>
       </div>
     </header>
-    <section class="slider">
-      <div class="container__fluid">
-        <div class="slider__wrapper">
-          <div class="slider__inner">
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-1.jpg);">
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-2.jpg);">
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-3.jpg);">
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-4.jpg);">
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-5.jpg);">
-              </div>
-            </div>
-            <div class="slider__item">
-              <div class="slider__image" style="background-image: url(../images/slider_images/slider_image-6.jpg);">
-              </div>
-            </div>
-          </div>
-          <div class="slider__arrow-left"><span class="icon-chevron-left"></span></div>
-          <div class="slider__arrow-right"><span class="icon-chevron-right"></span></div>
+    <section class="parallax">
 
-          <div class="slider__title-box">
-            <h1 class="slider__title">Лучшие цветы</h1>
-            <div class="slider__subtitle">для особых случаев</div>
-            <a href="#" class="slider__btn">купить</a>
+      <div class="parallax__inner">
+        <div class="parallax-layer-bgr">
+          <div class="parallax-layer" data-role="layer" data-coef="0.35"></div>
+          <div class="parallax-layer" data-role="layer" data-coef="0.65"></div>
+          <div class="parallax-layer" data-role="layer" data-coef="0.23"></div>
+          <div class="parallax-layer" data-role="layer" data-coef="0.59"></div>
+          <div class="parallax__title-box">
+            <h1 class="parallax__title">Лучшие цветы</h1>
+            <div class="parallax__subtitle">для любых случаев</div>
+            <a href="#" class="parallax__btn">купить</a>
           </div>
         </div>
       </div>
@@ -127,8 +102,7 @@
             <div class="occasions__item-content">
               <div class="occasions__item-title">Букет расскажет о ваших чувствах</div>
               <div class="occasions__item-text">Букет – это лучший способ выразить свою симпатию, а возможно и любовь!
-                Не секрет, что цветы умеют разговаривать на особом языке. Правильный выбор цветов поможет о многом
-                рассказать без слов.</div>
+                Не секрет, что цветы умеют разговаривать на особом языке.</div>
               <a href="#" class="occasions__item-btn">далее</a>
             </div>
           </div>
@@ -138,8 +112,10 @@
             <div class="occasions__item-content">
               <div class="occasions__item-title">Букет - лучшее дополнение к подарку</div>
               <div class="occasions__item-text"> Выбор букета цветов на день рождения зависит от множества факторов:
-                возраст получателя и его интересы, предпочтения в цвете и стиле одежды, иногда играет роль даже оттенок
-                глаз или волос! Слишком сложно? Не волнуйтесь,опытные флористы салона "Soffia" готовы прийти на помощь.
+                возраст получателя и его интересы, предпочтения в цвете и стиле одежды, иногда играет роль даже
+                оттенок
+                глаз или волос! Слишком сложно? Не волнуйтесь,опытные флористы салона "Soffia" готовы прийти на
+                помощь.
               </div>
               <a href="#" class="occasions__item-btn">далее</a>
             </div>
@@ -147,11 +123,11 @@
         </div>
       </div>
     </section>
-    <section class="category">
+     <section class="category">
       <div class="container__fluid">
         <div class="category__wrapper wrap">
           <div class="container">
-            <h2 class="category__title title">
+            <h2 class="category__title title wow">
               Цветы & композиции
             </h2>
             <div class="category__box">
@@ -159,125 +135,124 @@
               <div class="category__inner">
                 <a class="category__item category-1" href="#">
                   <div class="category__item-title">Для юбилеев</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-text">Цветы на юбилей принято дарить как женщинам, так и мужчинам. Это
+                    элегантно, изысканно и просто очень приятно.</div>
                 </a>
                 <a class="category__item category-2" href="#">
-                  <div class="category__item-title">Для бизнес-партнеров</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-title">Для бизнес-случаев</div>
+                  <div class="category__item-text">Правильно подобранный букет – эффектный способ создать хорошую
+                    атмосферу на переговорах и установить доверительные отношения.</div>
                 </a>
                 <a class="category__item category-3" href="#">
                   <div class="category__item-title">Для любимых</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-text">Цветов для любимой никогда не бывает много, их можно и нужно дарить
+                    не только по определенному поводу, но и без него.</div>
                 </a>
                 <a class="category__item category-4" href="#">
                   <div class="category__item-title">Для торжеств</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-text">Цветы всегда были и остаются главным украшением любого праздника, в
+                    особенности, если речь идет о свадьбе.</div>
                 </a>
                 <a class="category__item category-5" href="#">
                   <div class="category__item-title">Для родных</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-text">Сегодня хороший тон - преподносить цветы родителям, родственникам и
+                    друзьям. </div>
                 </a>
                 <a class="category__item category-6" href="#">
                   <div class="category__item-title">Для прощаний</div>
-                  <div class="category__item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-                    doloribus.</div>
+                  <div class="category__item-text">На цветы, принесенные на похороны, возложена важная миссия.Важно
+                    правильно подобрать растения для скорбного букета. </div>
                 </a>
-
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="bouquets">
-      <div class="container__fluid">
-        <div class="bouquets__wrapper wrap">
+    </section> 
+    <section class="discount">
+
+        
           <div class="container">
-            <h2 class="bouquets__title title">Скидки & Акции</h2>
-            <div class="bouquets__subtitle">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vel!
+            <h2 class="discount__title title wow">Скидки & Акции</h2>
+            <div class="discount__subtitle">
+              Мы предлагаем роскошные букеты по лучшим ценам.
             </div>
-            <div class="bouquets__items">
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-1.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name" href="#">Букет "Метеорит"</a>
-                    <div class="bouquets__category">Для любимых</div>
+            <div class="discount__items">
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-1.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name" href="#">Букет "Метеорит"</a>
+                    <div class="discount__category">Для любимых</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">799₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">799₽</div>
                 </div>
               </div>
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-2.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name" href="#">Букет "Рассвет"</a>
-                    <div class="bouquets__category">Для любимых</div>
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-2.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name" href="#">Букет "Рассвет"</a>
+                    <div class="discount__category">Для любимых</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">799₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">799₽</div>
 
                 </div>
               </div>
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-3.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name" href="#">Букет "Апрель"</a>
-                    <div class="bouquets__category">Для родных</div>
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-3.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name" href="#">Букет "Бриз"</a>
+                    <div class="discount__category">Для родных</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">799₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">499₽</div>
 
                 </div>
               </div>
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-4.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name" href="#">Букет "Апрель"</a>
-                    <div class="bouquets__category">Для любимых</div>
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-4.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name" href="#">Букет "Мерелин"</a>
+                    <div class="discount__category">Для любимых</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">799₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">1299₽</div>
 
                 </div>
               </div>
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-5.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name" href="#">Букет "Апрель"</a>
-                    <div class="bouquets__category">Для любимых</div>
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-5.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name" href="#">Букет "Апрель"</a>
+                    <div class="discount__category">Для любимых</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">799₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">999₽</div>
 
                 </div>
               </div>
-              <div class="bouquets__item">
-                <div class="bouquets__image" style=" background-image: url(../images/bouquets/buiquet-6.jpg);"></div>
-                <div class="bouquets__info">
-                  <div class="bouquets__info-inner">
-                    <a class="bouquets__name">Букет "Дымка"</a>
-                    <div class="bouquets__category">Для родных</div>
+              <div class="discount__item">
+                <div class="discount__image" style=" background-image: url(../images/discount/discount-6.jpg);"></div>
+                <div class="discount__info">
+                  <div class="discount__info-inner">
+                    <a class="discount__name">Букет "Дымка"</a>
+                    <div class="discount__category">Для родных</div>
                   </div>
-                  <button class="bouquets__basket"></button>
-                  <div class="bouquets__price">699₽</div>
+                  <button class="discount__basket"></button>
+                  <div class="discount__price">1299₽</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        
+      
+    </section> 
     <section class="reviews">
       <div class="container__fluid">
 
@@ -296,9 +271,8 @@
             <div class="reviews__content-box">
               <div class="reviews__avatar" style="background-image: url(../images/reviews/reviews__avatar-2.jpg);">
               </div>
-              <div class="reviews__text">Мы очень долго искали флористов, которые бы сделали все именно так как мы
-                хотим. Мы нашли салон Soffia и решили сделать заказ именно у них. Результат превзошел все наши ожидания,
-                представления и мечты! </div>
+              <div class="reviews__text">Даже представить не могла, что так интересно и неизбито можно украсить
+                праздник. Гости были в восторге, как и я!</div>
               <div class="reviews__name">Марина</div>
             </div>
           </div>
@@ -306,108 +280,117 @@
             <div class="reviews__content-box">
               <div class="reviews__avatar" style="background-image: url(../images/reviews/reviews__avatar-3.jpg);">
               </div>
-              <div class="reviews__text">Мы очень долго искали флористов, которые бы сделали все именно так как мы
-                хотим. Мы нашли салон Soffia и решили сделать заказ именно у них. Результат превзошел все наши ожидания,
-                представления и мечты! </div>
+              <div class="reviews__text">Заказывала оформление для Дня Рождения. Честно, думала мне не угодишь, но у
+                флористов салона "Soffia" это получилось блестяще. Теперь рекомендую всем!</div>
               <div class="reviews__name">Аглая Тернишная</div>
             </div>
           </div>
         </div>
         <div class="reviews__items-dots"></div>
       </div>
-    </section>
+    </section> 
     <section class="contact">
-      <div class="container">
-        <h2 class="contact__title title">Оставьте заявку</h2>
-        <div class="contact__inner">
-          <div class="contact__data">
-            <ul>
-              <li>
-                <div class="contact__data-title">Soffia</div>
-                <a class="contact__data-info" href="https://yandex.ru/maps/-/C8tRET6B">ул. Адоратского,д.3,
-                  ​71А квартал, г.Казань,​ 421001</a>
-              </li>
-              <li>
-                <div class="contact__data-title">Email</div>
-                <a class="contact__data-info" href="mailto:soffia.flowers@mail.ru">soffia.flowers@mail.ru</a>
-              </li>
-              <li>
-                <div class="contact__data-title">Телефон</div>
-                <a class="contact__data-info" href="tel:78432828282">+7(843)282-82-82</a>
-              </li>
-            </ul>
+      <div class="container__fluid">
+        <div class="container">
+          <h2 class="contact__title title wow">Оставьте заявку</h2>
+          <div class="contact__inner">
+            <div class="contact__data">
+              <ul class="contact__data-list">
+                <li class="contact__data-item">
+                  <div class="contact__data-title">Soffia</div>
+                  <a class="contact__data-info" href="https://yandex.ru/maps/-/C8tRET6B">ул. Адоратского,д.3,<br />
+                    квартал ​71А, г.Казань,​ 421001</a>
+                </li>
+                <li class="contact__data-item">
+                  <div class="contact__data-title">Email</div>
+                  <a class="contact__data-info" href="mailto:soffia.flowers@mail.ru">soffia.flowers@mail.ru</a>
+                </li>
+                <li class="contact__data-item">
+                  <div class="contact__data-title">Телефон</div>
+                  <a class="contact__data-info" href="tel:78432828282">+7(843)282-82-82</a>
+                </li>
+              </ul>
 
+            </div>
+            <form class="contact__form" action="">
+              <input type="text" class="form__name" placeholder="Имя" required="required">
+              <input type="text" class="form__tel" placeholder="Телефон">
+              <input type="text" class="form__mail" placeholder="E-mail" required="required">
+              <textarea class="form__text" name="comment" cols="120" rows="10" maxlength="6000" required="required"
+                placeholder="Текст сообщения" resize></textarea>
+              <button type="submit" class="form__submit">Отправить</button>
+            </form>
           </div>
-               <form class="contact__form" action="">
-            <input type="text" class="form__name" placeholder="Имя" required="required">
-            <input type="text" class="form__tel" placeholder="Телефон">
-            <input type="text" class="form__mail" placeholder="E-mail" required="required">
-            <textarea class="form__text" name="comment" cols="120" rows="10" maxlength="6000" required="required"
-              placeholder="Текст сообщения" resize></textarea>
-            <button type="submit" class="form__submit">Отправить</button>
-          </form>
-                </div>
+        </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container__">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__item footer-mailing">
-            <h3 class="footer__item-title">Наша рассылка</h3>
-            <ul>
-              <li>Последние новости и акции в вашем почтовом ящике</li>
-              <li></li>
-              <form><input type="text" placeholder="E-mail"><button type="submit"></button></form>
-            </ul>
+      <div class="container__fluid">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__item footer__navigation">
+              <h3 class="footer__item-title">Меню</h3>
+              <ul class="footer__navigation-list">
+                <li class="footer__navigation-item"><a href="#">Цветы</a></li>
+                <li class="footer__navigation-item"><a href="#">Композиции</a></li>
+                <li class="footer__navigation-item"><a href="#">Растения</a></li>
+                <li class="footer__navigation-item"><a href="#">Букеты</a></li>
+                <li class="footer__navigation-item"><a href="#">Подарки</a></li>
+                <li class="footer__navigation-item"><a href="#">Доставка</a></li>
+              </ul>
+            </div>
+            <div class="footer__item footer__mailing">
+              <h3 class="footer__item-title">Наша рассылка</h3>
+              <ul class="footer__mailing-list">
+                <li class="footer__mailing-item">Последние новости и акции в вашем почтовом ящике</li>
+                <li class="footer__mailing-item">
+                  <form class="footer__mailing-form">
+                    <input type="text" class="footer__mailing-input" placeholder="E-mail">
+                    <button type="submit" class="footer__mailing-btn icon-long-arrow-right"></button></form>
+                </li>
+              </ul>
 
+            </div>
+
+            <div class="footer__item  footer__contacts">
+              <h3 class="footer__item-title">Контакты</h3>
+              <ul class="footer__contacts-list">
+                <li class="footer__contacts-item">ул. Адоратского, д.3,<br />
+                  квартал ​71А, г.Казань,​421001</a>
+                  <a class="footer__map-link" href="https://yandex.ru/maps/-/C8tRET6B">смотреть на карте</a></li>
+
+                <li class="footer__contacts-item footer__mail"><a class="footer__mail"
+                    href="mailto:soffia.flowers@mail.ru">soffia.flowers@mail.ru</a></li>
+                <li class="footer__contacts-item footer__tel"><a class="footer__tel"
+                    href="tel:78432828282">+7(843)282-82-82</a></li>
+                <li class="footer__contacts-item"><a class="icon-whatsapp" href="https://wa.me/78432828282">связаться по
+                    whatsapp</a><a class="icon-viber" href="viber://chat?number=%2B78432828282">связаться по viber. </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item footer__social">
+              <h3 class="footer__item-title">Мы в соцсетях</h3>
+              <ul>
+                <li><a class="link-facebook icon-facebook" href="#">фейсбук</a></li>
+                <li><a class="link-instagram icon-instagram" href="#">инстаграмм</a></li>
+                <li><a class="link-ok icon-odnoklassniki" href="#">одноклассники</a></li>
+                <li>
+                  <a class="link-pinterest icon-pinterest" href="#">пинтерест</a>
+                </li>
+                <li><a class="link-vk icon-vk" href="#">в контакте</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__item footer-navigation">
-            <h3 class="footer__item-title">Меню</h3>
-            <ul>
-              <li><a href="#">Цветы</a></li>
-              <li><a href="#">Композиции</a></li>
-              <li><a href="#">Растения</a></li>
-              <li><a href="#">Букеты</a></li>
-              <li><a href="#">Подарки</a></li>
-              <li><a href="#">Доставка</a></li>
-            </ul>
-          </div>
-          <div class="footer__item footer-social">
-            <h3 class="footer__item-title">Мы в соцсетях</h3>
-            <ul>
-              <li><a class="link-facebook icon-facebook" href="">фейсбук</a></li>
-              <li><a class="link-instagram icon-instagram" href="">инстаграмм</a></li>
-              <li><a class="link-ok icon-odnoklassniki" href="">одноклассники</a></li>
-              <li>
-                <a class="link-pinterest icon-pinterest" href="">пинтерест</a>
-              </li>
-              <li><a class="link-vk icon-vk" href="">в контакте</a></li>
-            </ul>
-          </div>
-          <div class="footer__item  footer-contacts">
-            <h3 class="footer__item-title">Контакты</h3>
-            <ul>
-              <li>ул. Адоратского, д.3,
-                ​71А квартал, г.Казань,​421001</a>
-                <a href="https://yandex.ru/maps/-/C8tRET6B">смотреть на карте</a></li>
-              <li><a href="#"></a></li>
-              <li><a href="mailto:soffia.flowers@mail.ru">soffia.flowers@mail.ru</a></li>
-              <li><a href="tel:78432828282">+7(843)282-82-82</a></li>
-              <li><a class="icon-whatsapp" href="#"></a><a class="icon-viber" href="#"></a></li>
-            </ul>
-          </div>
+          <a class="footer__logo">
+            <div class="footer__logo-icon"><img src="images/footer__logo-icon.png" alt=""></div>
+            <div class="footer__logo-name">Soffia</div>
+            <div class="footer__logo-subttile">цветы</div>
+          </a>
         </div>
-        <a class="footer__logo">
-          <div class="footer__logo-icon"><img src="images/logo-icon.png" alt=""></div>
-          <div class="footer__logo-name">Soffia</div>
-          <div class="footer__logo-subttile">салон</div>
-        </a>
       </div>
-    </div>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
