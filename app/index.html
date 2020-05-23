@@ -8,21 +8,29 @@
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700|Playfair+Display:400,700,700i|Prata&display=swap&subset=cyrillic"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="top">
+    <a href="#top" class="top__button" id="top__btn"><span class="icon-long-arrow-right"></span></a>
     <header class="header">
       <div class="container">
         <div class="header__wrapper wrap">
+          <div class="menu__btn">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <nav class="header__nav-left">
             <ul class="header__nav-left-list">
-              <li class="header__nav-left-item"><a href="#">Цветы</a></li>
-              <li class="header__nav-left-item"><a href="#">Композиции</a></li>
-              <li class="header__nav-left-item"><a href="#">Растения</a></li>
-              <li class="header__nav-left-item"><a href="#">Букеты</a></li>
+              <li class="header__nav-item"><a href="#">Цветы</a></li>
+              <li class="header__nav-item"><a href="#">Композиции</a></li>
+              <li class="header__nav-item"><a href="#">Растения</a></li>
+              <li class="header__nav-item"><a href="#">Букеты</a></li>
             </ul>
           </nav>
           <a class="header__logo">
@@ -34,19 +42,19 @@
           </a>
           <nav class="header__nav-right">
             <ul class="header__nav-right-list">
-              <li class="header__nav-right-item"><a href="#">Подарки</a></li>
-              <li class="header__nav-right-item"><a href="#">Доставка</a></li>
+              <li class="header__nav-item"><a href="#">Подарки</a></li>
+              <li class="header__nav-item"><a href="#">Доставка</a></li>
 
             </ul>
           </nav>
           <a class="header__tel" href="tel:+78432828282" class="header__phone">+7(843)282-82-82</a>
           <div class="header__basket">
             <a class="header__basket-icon" href="#"><span>1</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29px"
-                height="33px">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29 33">
                 <path fill-rule="evenodd" fill="rgb(51, 51, 51)"
                   d="M26.496,9.409 C26.449,8.894 26.017,8.499 25.500,8.499 L20.500,8.499 L20.500,6.499 C20.500,3.190 17.808,0.499 14.500,0.499 C11.191,0.499 8.500,3.190 8.500,6.499 L8.500,8.499 L3.500,8.499 C2.982,8.499 2.551,8.894 2.504,9.409 L0.504,31.410 C0.479,31.688 0.572,31.966 0.762,32.173 C0.951,32.381 1.219,32.499 1.500,32.499 L27.500,32.499 C27.781,32.499 28.049,32.381 28.238,32.173 C28.426,31.966 28.521,31.688 28.496,31.410 L26.496,9.409 ZM10.500,6.499 C10.500,4.293 12.295,2.499 14.500,2.499 C16.705,2.499 18.500,4.293 18.500,6.499 L18.500,8.499 L10.500,8.499 L10.500,6.499 ZM2.596,30.499 L4.413,10.499 L8.500,10.499 L8.500,12.776 C7.904,13.123 7.500,13.761 7.500,14.499 C7.500,15.603 8.396,16.499 9.500,16.499 C10.604,16.499 11.500,15.603 11.500,14.499 C11.500,13.761 11.096,13.123 10.500,12.776 L10.500,10.499 L18.500,10.499 L18.500,12.776 C17.904,13.123 17.500,13.760 17.500,14.499 C17.500,15.603 18.396,16.499 19.500,16.499 C20.603,16.499 21.500,15.603 21.500,14.499 C21.500,13.761 21.096,13.123 20.500,12.776 L20.500,10.499 L24.587,10.499 L26.404,30.499 L2.596,30.499 Z" />
-              </svg></a>
+              </svg>
+            </a>
             <div class="basket__inner">
               <dev class="basket__item">
                 <a class="basket__product" href="#">
@@ -68,8 +76,7 @@
         </div>
       </div>
     </header>
-    <section class="parallax">
-
+    <!--   <section class="parallax">
       <div class="parallax__inner">
         <div class="parallax-layer-bgr">
           <div class="parallax-layer" data-role="layer" data-coef="0.35"></div>
@@ -123,11 +130,11 @@
         </div>
       </div>
     </section>
-     <section class="category">
+    <section class="category">
       <div class="container__fluid">
         <div class="category__wrapper wrap">
           <div class="container">
-            <h2 class="category__title title wow">
+            <h2 class="category__title title title-effect wow">
               Цветы & композиции
             </h2>
             <div class="category__box">
@@ -168,94 +175,88 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <section class="discount">
-
-        
-          <div class="container">
-            <h2 class="discount__title title wow">Скидки & Акции</h2>
-            <div class="discount__subtitle">
-              Мы предлагаем роскошные букеты по лучшим ценам.
+      <div class="container">
+        <h2 class="discount__title title wow">Скидки & Акции</h2>
+        <div class="discount__subtitle">
+          Мы предлагаем роскошные букеты по лучшим ценам.
+        </div>
+        <div class="discount__items">
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-1.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name" href="#">Букет "Метеорит"</a>
+                <div class="discount__category">Для любимых</div>
+              </div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">799<span class="price-rouble"></span></div>
             </div>
-            <div class="discount__items">
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-1.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name" href="#">Букет "Метеорит"</a>
-                    <div class="discount__category">Для любимых</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">799₽</div>
-                </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-2.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name" href="#">Букет "Рассвет"</a>
+                <div class="discount__category">Для любимых</div>
               </div>
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-2.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name" href="#">Букет "Рассвет"</a>
-                    <div class="discount__category">Для любимых</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">799₽</div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">799<span class="price-rouble"></span></div>
 
-                </div>
+            </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-3.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name" href="#">Букет "Бриз"</a>
+                <div class="discount__category">Для родных</div>
               </div>
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-3.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name" href="#">Букет "Бриз"</a>
-                    <div class="discount__category">Для родных</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">499₽</div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">499<span class="price-rouble"></span></div>
 
-                </div>
+            </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-4.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name" href="#">Букет "Мерелин"</a>
+                <div class="discount__category">Для любимых</div>
               </div>
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-4.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name" href="#">Букет "Мерелин"</a>
-                    <div class="discount__category">Для любимых</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">1299₽</div>
-
-                </div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">1299<span class="price-rouble"></span></div>
+            </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-5.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name" href="#">Букет "Апрель"</a>
+                <div class="discount__category">Для любимых</div>
               </div>
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-5.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name" href="#">Букет "Апрель"</a>
-                    <div class="discount__category">Для любимых</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">999₽</div>
-
-                </div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">999<span class="price-rouble"></span></div>
+            </div>
+          </div>
+          <div class="discount__item">
+            <div class="discount__image" style=" background-image: url(../images/discount/discount-6.jpg);"></div>
+            <div class="discount__info">
+              <div class="discount__info-inner">
+                <a class="discount__name">Букет "Дымка"</a>
+                <div class="discount__category">Для родных</div>
               </div>
-              <div class="discount__item">
-                <div class="discount__image" style=" background-image: url(../images/discount/discount-6.jpg);"></div>
-                <div class="discount__info">
-                  <div class="discount__info-inner">
-                    <a class="discount__name">Букет "Дымка"</a>
-                    <div class="discount__category">Для родных</div>
-                  </div>
-                  <button class="discount__basket"></button>
-                  <div class="discount__price">1299₽</div>
-                </div>
+              <button class="discount__basket"></button>
+              <div class="discount__price">1499<span class="price-rouble"></span>
               </div>
             </div>
           </div>
-        
-      
-    </section> 
+        </div>
+      </div>
+    </section>
     <section class="reviews">
       <div class="container__fluid">
-
         <div class="reviews__items">
           <div class="reviews__item" style="background-image: url(../images/reviews/reviews-1.jpg)">
             <div class="reviews__content-box">
@@ -286,9 +287,8 @@
             </div>
           </div>
         </div>
-        <div class="reviews__items-dots"></div>
-      </div>
-    </section> 
+        </div>
+    </section>
     <section class="contact">
       <div class="container__fluid">
         <div class="container">
@@ -324,7 +324,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+     <footer class="footer">
       <div class="container__fluid">
         <div class="container">
           <div class="footer__inner">
@@ -349,9 +349,7 @@
                     <button type="submit" class="footer__mailing-btn icon-long-arrow-right"></button></form>
                 </li>
               </ul>
-
             </div>
-
             <div class="footer__item  footer__contacts">
               <h3 class="footer__item-title">Контакты</h3>
               <ul class="footer__contacts-list">
@@ -385,10 +383,10 @@
             <div class="footer__logo-icon"><img src="images/footer__logo-icon.png" alt=""></div>
             <div class="footer__logo-name">Soffia</div>
             <div class="footer__logo-subttile">цветы</div>
-          </a>
+          </>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

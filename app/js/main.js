@@ -17,7 +17,12 @@ $(function () {
      
       new WOW().init();
 
-
+    
+      $('.menu__btn').on('click', function () {
+        $('.header__nav-left').slideToggle();
+        $('.header__nav-right').slideToggle();
+      });
+    
     });
     
     let $layers = $('div[data-role="layer"]');
@@ -29,6 +34,16 @@ $(window).on('scroll', function(e) {
         coef = $layer.data('coef'),
         scroll = $(window).scrollTop();
          
-    $layer.css('top' , (scroll * coef) + 'px');
+    $layer.css('top' , (10 + scroll * coef) + 'px');
   });
    });
+
+   window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > document.body.clientHeight|| document.documentElement.scrollTop > document.body.clientHeight) {
+        document.getElementById("top__btn").style.display = "flex";
+    } else {
+        document.getElementById("top__btn").style.display = "none";
+    }
+}
