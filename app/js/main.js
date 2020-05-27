@@ -40,7 +40,7 @@ $(window).on('scroll', function(e) {
 
    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+    function scrollFunction() {
     if (document.body.scrollTop > document.body.clientHeight|| document.documentElement.scrollTop > document.body.clientHeight) {
         document.getElementById("top__btn").style.display = "flex";
     } else {
