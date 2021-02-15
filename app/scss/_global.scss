@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  
 }
 *,
 *::before,
@@ -14,9 +15,9 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
- 
 }
 body {
+
   min-width: 320px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -61,7 +62,11 @@ textarea {
 .wrapper {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
   min-height: 100%;
+  margin: 0 auto;
 }
 .content {
   flex: 1 0 auto;
@@ -72,9 +77,7 @@ textarea {
 .container__fluid {
   max-width: 1920px;
   width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-}
+ }
 .container {
   max-width: 1200px;
   width: 100%;

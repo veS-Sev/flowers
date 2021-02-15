@@ -2,6 +2,30 @@
 @import "global";
 @import "fonts";
 
+.top__button-arrow {
+    position: absolute;
+    right: 23px;
+    width: 45px;
+    height: 100%;
+    z-index: 21;
+}
+a.top__button {
+    display: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 100%;
+    margin-top: -50px;
+    span {
+        transform: rotate(270deg);
+        font-size: 16px;
+    }
+}
 // header start
 .header {
     position: relative;
@@ -225,19 +249,23 @@ div[data-role="layer"]:nth-child(4) {
         font-style: italic;
     }
     .parallax__subtitle {
+        display: block;
         font-size: 60px;
         margin-bottom: 15px;
     }
-    .parallax__btn {
+    a.parallax__btn {
         background-color: transparent;
         font-size: 18px;
         text-transform: uppercase;
         color: #fff;
         width: 211px;
         height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border: 1px solid #fff;
-        padding: 13px 10px;
         border-radius: 27px;
+        margin: 0 auto;
     }
     .parallax__btn:hover,
     .parallax__btn:focus {
@@ -275,6 +303,7 @@ div[data-role="layer"]:nth-child(4) {
         margin-bottom: 90px;
     }
     &__item {
+        position: relative;
         width: 365px;
         height: 260px;
         @include bgi;
@@ -439,7 +468,7 @@ div[data-role="layer"]:nth-child(4) {
         margin: 0 auto;
     }
     &::after {
-        bottom: -100px;
+        bottom: -151px;
         content: "";
         width: 0;
         height: 0;
@@ -832,25 +861,7 @@ form.contact__form {
         color: #666;
     }
 }
-a.top__button {
-    display: none;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
-    left: 95%;
-    bottom: 5%;
-    position: fixed;
-    width: 45px;
-    height: 45px;
-    z-index: 21;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    span {
-        transform: rotate(270deg);
-        font-size: 16px;
-    }
-}
-//footer end
 
+//footer end
 
 @import "media";

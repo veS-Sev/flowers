@@ -23,7 +23,7 @@ $(function () {
         $('.header__nav-right').slideToggle();
       });
     
-    });
+    
     
     let $layers = $('div[data-role="layer"]');
   
@@ -47,3 +47,4 @@ $(window).on('scroll', function(e) {
         document.getElementById("top__btn").style.display = "none";
     }
 }
+});
