@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soffia</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700|Playfair+Display:400,700,700i|Prata&display=swap&subset=cyrillic"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Prata&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
@@ -69,7 +70,7 @@
                 </svg>
               </a>
               <div class="basket__inner">
-                <dev class="basket__item">
+                <div class="basket__item">
                   <a class="basket__product" href="#">
                     <div class="basket__product-image" style="background-image:url(../images/basket/basket__img-1.jpg)">
                     </div>
@@ -79,7 +80,7 @@
                     </div>
                   </a>
                   <button class="basket__product-del"><span>+</span></button>
-                </dev>
+                </div>
                 <div class="basket__buttons">
                   <button class="basket__clear-btn">Очистить</button>
                   <button class="basket__pay-btn">Оплатить</button>
@@ -318,7 +319,7 @@
                 <ul class="contact__data-list">
                   <li class="contact__data-item">
                     <div class="contact__data-title">Soffia</div>
-                    <a class="contact__data-info" href="https://yandex.ru/maps/-/C8tRET6B">ул. Адоратского,д.3,<br />
+                    <a class="contact__data-info" href="https://yandex.ru/maps/-/C8tRET6B">ул. Адоратского,д.3,<br>
                       квартал ​71А, г.Казань,​ 421001</a>
                   </li>
                   <li class="contact__data-item">
@@ -332,12 +333,12 @@
                 </ul>
 
               </div>
-              <form class="contact__form" action="">
+              <form class="contact__form" action="#">
                 <input type="text" class="form__name" placeholder="Имя" required="required">
                 <input type="text" class="form__tel" placeholder="Телефон">
                 <input type="text" class="form__mail" placeholder="E-mail" required="required">
                 <textarea class="form__text" name="comment" cols="120" rows="10" maxlength="6000" required="required"
-                  placeholder="Текст сообщения" resize></textarea>
+                  placeholder="Текст сообщения"></textarea>
                 <button type="submit" class="form__submit">Отправить</button>
               </form>
             </div>
@@ -374,10 +375,9 @@
             <div class="footer__item  footer__contacts">
               <h3 class="footer__item-title">Контакты</h3>
               <ul class="footer__contacts-list">
-                <li class="footer__contacts-item">ул. Адоратского, д.3,<br />
-                  квартал ​71А, г.Казань,​421001</a>
+                <li class="footer__contacts-item">ул. Адоратского, д.3,<br>
+                  квартал ​71А, г.Казань,​421001
                   <a class="footer__map-link" href="https://yandex.ru/maps/-/C8tRET6B">смотреть на карте</a></li>
-
                 <li class="footer__contacts-item footer__mail"><a class="footer__mail"
                     href="mailto:soffia.flowers@mail.ru">soffia.flowers@mail.ru</a></li>
                 <li class="footer__contacts-item footer__tel"><a class="footer__tel"
@@ -406,6 +406,7 @@
             <div class="footer__logo-icon"><img src="images/footer__logo-icon.png" alt=""></div>
             <div class="footer__logo-name">Soffia</div>
             <div class="footer__logo-subttile">цветы</div>
+          </a>
         </div>
       </div>
     </footer>
@@ -414,5 +415,4 @@
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
